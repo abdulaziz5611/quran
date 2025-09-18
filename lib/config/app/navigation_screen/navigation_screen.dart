@@ -22,7 +22,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: AppColors.green700,
+        backgroundColor: AppColors.black500,
         unselectedIconTheme: IconThemeData(color: AppColors.white500),
         selectedIconTheme: IconThemeData(color: AppColors.white500),
         unselectedItemColor: AppColors.white500,
@@ -71,6 +71,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
         {
           return Center(child: SettingPage());
         }
+
     }
   }
 }

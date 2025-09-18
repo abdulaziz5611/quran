@@ -22,7 +22,9 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(backgroundColor: AppColors.green700),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
-        child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SalamComponent(
               eng: 'Peace be upon you',
@@ -62,7 +64,12 @@ class _HomePageState extends State<HomePage> {
                 QuickActionCard(
                   title: 'Qibla',
                   icon: Icons.explore,
-                  onTap: () {Navigator.push(context, MaterialPageRoute(builder: (_) => MainQiblaPage()));},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => MainQiblaPage()),
+                    );
+                  },
                   subtitle: 'Find direction',
                 ),
                 QuickActionCard(
@@ -79,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -103,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -114,10 +121,10 @@ class _HomePageState extends State<HomePage> {
                   subtitle: 'During prayer',
                 ),
                 QuickActionCard(
-                  title: 'Mosque',
-                  icon: Icons.location_on,
+                  title: 'Support US',
+                  icon: Icons.volunteer_activism,
                   onTap: () {},
-                  subtitle: 'Find nearby',
+                  subtitle: 'Buy us a meal',
                 ),
                 QuickActionCard(
                   title: 'Settings',
@@ -127,10 +134,6 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-
-
-
-
           ],
         ),
       ),
